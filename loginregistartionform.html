@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 20px 30px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+        background-color: #ddd;
+        border-radius: 50%;
+    }
+
+    .header-text {
+        flex-grow: 1;
+    }
+
+    .header-text h1 {
+        font-size: 18px;
+        color: #e87b0f;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .header-text h2 {
+        font-size: 14px;
+        color: #e87b0f;
+        margin: 5px 0 0;
+        line-height: 1.2;
+    }
+
+    .nav-links {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .nav-links .back-to-home {
+        margin-bottom: 2px;
+    }
+
+    .login-card {
+        padding: 30px;
+    }
+
+    .login-card h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 15px;
+        color: #555;
+        margin-bottom: 8px;
+    }
+
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .form-group input::placeholder {
+        color: #aaa;
+    }
+
+    .password-input-container {
+        position: relative;
+    }
+
+    .password-toggle {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #888;
+        font-size: 18px;
+    }
+
+    .forgot-password {
+        text-align: left;
+        margin-top: -10px;
+        margin-bottom: 25px;
+    }
+
+    .forgot-password a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 14px;
+    }
+
+    .sign-in-button {
+        width: 100%;
+        padding: 15px;
+        background-color: #ff7f50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .sign-in-button:hover {
+        background-color: #e66a3d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="ictrdshortImage.jpg" alt="ICTRD Logo" class="logo">
+      <div class="header-text">
+        <h1>भारतीय तकनीकी विकास एवं अनुसंधान परिषद</h1>
+        <h2>Indian Council for Technical Research & Development</h2>
+      </div>
+      <!-- <div class="nav-links">
+        <a href="#" class="back-to-home">Back to Home</a>
+      </div> -->
+      <div class="nav-links">
+        <a href="frontend.html" class="back-to-home">Back to Home</a>
+      </div>
+
+    </div>
+
+    <div class="login-card">
+      <h2>Login Your Account</h2>
+      <form>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-input-container">
+            <input type="password" id="password" placeholder="Enter your password">
+            <span class="password-toggle">&#128065;</span>
+          </div>
+        </div>
+        <div class="forgot-password">
+          <a href="#">Forgot Password ?</a>
+        </div>
+        <button type="submit" class="sign-in-button">Sign In</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

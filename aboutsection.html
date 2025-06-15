@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS Library CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff;
+      color: #000;
+      overflow-x: hidden;
+    }
+
+    .welcome-section {
+      padding: 80px 20px;
+      background-color: #ffffff;
+    }
+
+    .welcome-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin: auto;
+      gap: 40px;
+    }
+
+    .welcome-image {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .welcome-image img {
+      width: 110%;
+      max-width: 450px;
+      border-radius: 20px;
+    }
+
+    .welcome-content {
+      flex: 1 1 50%;
+      max-width: 600px;
+    }
+
+    .welcome-content h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .highlight-green {
+      color: #4CAF50;
+    }
+
+    .highlight-orange {
+      color: #e97152;
+      font-weight: bold;
+      margin-bottom: 22px;
+    }
+
+    .welcome-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap; /* Force in one line */
+      gap: 40px;
+      margin-top: 30px;
+      width: 100%;
+      max-width: 1200px;
+      margin-inline: auto; /* Center the block */
+    }
+
+    .stat-box {
+      flex: 1 1 0;
+      text-align: center;
+      min-width: 200px;
+    }
+
+
+
+    .stat-label {
+      display: block;
+      font-weight: bold;
+      color: #4CAF50;
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+
+    .stat-number {
+      font-size: 48px;
+      font-weight: bold;
+      color: #e97152;
+      margin: 0;
+    }
+
+    .stat-desc {
+      font-weight: bold;
+      color: #000;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .welcome-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .stats {
+        justify-content: center;
+      }
+    }
+
+    /* Enable hover dropdown */
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* Optional: Remove spacing caused by Bootstrap */
+    }
+
+    /* Optional: keep the toggle style */
+    .navbar-nav .dropdown-toggle::after {
+      display: inline-block;
+      margin-left: .255em;
+      vertical-align: .255em;
+      content: "";
+      border-top: .3em solid;
+      border-right: .3em solid transparent;
+      border-bottom: 0;
+      border-left: .3em solid transparent;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="logo.png" alt="ICTRD Logo" height="50" class="me-2">
+      <div>
+        <div class="fw-bold" style="font-size: 14px;">भारतीय तकनीकी विकास एवं अनुसंधान परिषद</div>
+        <div style="font-size: 12px;">INDIAN COUNCIL FOR TECHNICAL RESEARCH & DEVELOPMENT</div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="websitehomepage.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" >
+            Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+              <li><a class="dropdown-item" href="Aicourse.html">Artificial Intelligence and Machine Learning Program</a></li>
+              <li><a class="dropdown-item" href="fluttercourse.html">Flutter Application Development</a></li>
+              <li><a class="dropdown-item" href="pythoncourse.html">Python Programming Certification</a></li>
+              <li><a class="dropdown-item" href="reactcourse.html">React Native App Development Certification</a></li>
+              <li><a class="dropdown-item" href="cybersecuritycourse.html">Certified Cyber Security Professional Program</a></li>
+              <li><a class="dropdown-item" href="datascience.html">Certified Data Science Associate Program</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="aboutsection.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="loginregistartionform.html">Login</a></li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="welcome-section">
+  <div class="welcome-container">
+    
+    <!-- Left Image with Flip Animation -->
+    <!-- Left Image with Slow Flip Animation -->
+    <div class="welcome-image" data-aos="flip-left" data-aos-duration="1500" data-aos-easing="ease-in-out">
+    <img src="girl.png" alt="Welcome Image">
+  </div>
+  
+
+    <!-- Right Content with staggered animations -->
+    <div class="welcome-content">
+      <h1 data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+        Welcome to Our <span class="highlight-green">ICTRD E-Learning</span><br>Education Centre
+      </h1>
+      <h3 class="highlight-orange" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
+        Choose from top industry instructors
+      </h3>
+      <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="700">
+        Cras aliquet ut ex ut sagittis. Nullam a orci massa. Etiam posuere et elit scelerisque sagittis. 
+        Suspendisse ut dolor mattis, vehicula urna volutpat, fermentum risus. Praesent vulputate ante id metus condimentum.
+      </p>
+
+      <!-- Stats -->
+      
+
+      <div class="stats">
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">
+          <span class="stat-label">Over</span>
+          <h2 id="STUDENTS ENROLLED" class="stat-number">27,079</h2>
+          <p class="stat-desc">STUDENTS ENROLLED</p>
+        </div>
+
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">
+          <span class="stat-label">Over</span>
+          <h2 id="total-programs" class="stat-number">7</h2>
+          <p class="stat-desc">Total Programs</p>
+        </div> <!-- ✅ Missing closing tag added here -->
+
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="900" data-aos-duration="700">
+          <span class="stat-label">Over</span>
+          <h2 id="Certification Awarded" class="stat-number">18,477</h2>
+          <p class="stat-desc">Certification Awarded</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="py-5" style="background: linear-gradient(90deg, #fdeff9 0%, #ecf4ff 100%);">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- ICTRD Info -->
+      <div class="col-md-4">
+        <img src="logo.png" alt="ICTRD Logo" style="height: 60px;">
+        <div>
+          <div class="fw-bold" style="font-size: 14px;">भारतीय तकनीकी विकास एवं अनुसंधान परिषद</div>
+          <div style="font-size: 12px;">INDIAN COUNCIL FOR TECHNICAL RESEARCH & DEVELOPMENT</div>
+        </div>
+        <h4 class="fw-bold mt-3">Kaushalpith</h4>
+        <p class="text-muted">
+          ICTRD provides in-demand certification courses that are tailored to elevate your career and highlight your achievements. Plus, we deliver a hard copy of your certificate right to your doorstep!
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-2">
+        <h5 class="fw-bold">Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">Trainee Identification Number (TID)</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Exam Protocols</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-2">
+        <h5 class="fw-bold">Contact</h5>
+        <p class="mb-0">
+          <i class="bi bi-telephone-fill text-warning"></i> 0712-2244884
+        </p>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-2">
+        <h5 class="fw-bold">Email</h5>
+        <p class="mb-0">
+          <i class="bi bi-chat-dots-fill text-danger"></i> ictrd@egov.ind.in
+        </p>
+      </div>
+
+      <!-- Address -->
+      <div class="col-md-2">
+        <h5 class="fw-bold">Address</h5>
+        <p class="mb-0">
+          ICTRD Secretariat<br>
+          Building- Plot No. 72,<br>
+          Shahakar Layout,<br>
+          Trimurti Nagar, Nagpur - 440022
+        </p>
+      </div>
+
+    </div>
+
+    <hr class="my-4">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        <a href="#" class="text-decoration-none text-dark me-3">Terms</a>
+        <a href="#" class="text-decoration-none text-dark me-3">Privacy</a>
+        <a href="#" class="text-decoration-none text-dark me-3">FAQ</a>
+        <a href="#" class="text-decoration-none text-dark me-3">Shipping and Delivery Policy</a>
+        <a href="#" class="text-decoration-none text-dark">Refund Policy</a>
+      </div>
+      <p class="mb-0 text-muted">&copy; 2025 ICTRD. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- AOS JS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
+<script>
+  function countUp(elementId, endValue, duration = 2000) {
+    const element = document.getElementById(elementId);
+    let start = 0;
+    const increment = endValue / (duration / 16); // approx 60fps
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= endValue) {
+        start = endValue;
+        clearInterval(timer);
+      }
+      // Format number with commas and add suffix
+      element.textContent = Math.floor(start).toLocaleString() ;
+    }, 16);
+  }
+
+  window.onload = () => {
+    countUp('STUDENTS ENROLLED', 27079 );  
+    countUp('total-programs', 7 );
+    countUp('Certification Awarded', 18477);      
+  };
+</script>
+
+
+
+</body>
+</html>
